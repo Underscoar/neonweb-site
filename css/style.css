@@ -88,3 +88,20 @@ header .background-text { position: absolute; top: 0; left: 0; height: 100%; max
 .home-service-list li { margin-bottom: 25px; position: relative; padding-left: calc(var(--bs-gutter-x) * 1.75); }
 .home-service-list li svg { position: absolute; left: calc(var(--bs-gutter-x) * 0.5); top: 0; width: 25px; height: 25px; }
 .home-service-list li svg path { fill: var(--blue); }
+
+.subfooter { background: url('../img/pattern-wall-01.png') no-repeat center center / cover; }
+.subfooter .container-small { display: flex; justify-content: space-between; align-items: center; }
+
+footer { background: #2F2827; color: #fff; font-family: 'Poppins'; }
+footer .footer-content { border-top: 1px solid #fff; border-bottom: 1px solid #fff; padding-top: 75px; padding-bottom: 75px; }
+footer h2 { color: #fff; margin-bottom: 0; font-weight: 700; }
+footer p { color: #fff; font-family: 'Poppins'; }
+footer p svg { height: 1rem; }
+footer p svg path { fill: #fff; }
+footer a { color: #fff; text-decoration: none; }
+footer a:hover { text-decoration: underline; color: #fff; }
+footer .endpage { display: flex; justify-content: space-between; padding: 1rem 0; font-size: 1.125rem; }
+footer .endpage ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+footer .endpage ul li { display: inline-block; }
+footer .endpage ul li::after { content: '|'; margin: 0 0.5rem; }
+footer .endpage ul li:last-child::after { display: none; }

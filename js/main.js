@@ -8,4 +8,6 @@ allTabBtns.forEach((element) => {
         document.querySelector(`#tab-${element.dataset.tabtoggle}`).classList.add('active');
         element.classList.add('active');
     })
-})
+});
+
+document.getElementById('current-year').innerHTML = new Date().getFullYear();
