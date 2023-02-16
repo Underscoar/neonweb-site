@@ -42,13 +42,17 @@ blockquote strong { font-weight: 600; }
 .blue-wall { background: var(--blue); color: #fff; }
 .blue-wall p { color: #fff; }
 
-nav { position: fixed; top: 0; width: 100%; z-index: 5; }
-nav .nav-wrap { border-bottom: 1px solid var(--blue); display: flex; justify-content: space-between; align-items: center; padding: 30px 0 15px; }
+nav { position: fixed; top: 0; width: 100%; z-index: 5; border-bottom: 1px solid transparent; transition: background 0.3s, border-bottom-color 0.3s; }
+nav .nav-wrap { border-bottom: 1px solid var(--blue); display: flex; justify-content: space-between; align-items: center; padding: 30px 0 15px; transition: padding 0.3s, border-bottom-color 0.3s; }
 nav .logo-wrap { margin-right: 25px; }
+nav .logo-wrap img { transition: width 0.3s; }
 nav ul.nav-items { display: flex; list-style: none; padding-left: 0; margin-bottom: 0; font-family: 'Poppins'; font-weight: 700; }
 nav ul.nav-items li { margin-left: 1rem; }
 nav ul.nav-items li:first-child { margin-left: 0; }
 nav ul.nav-items a { color: var(--black); text-decoration: none; font-size: 1.25rem; padding: 0.5em; }
+nav.scroll-nav { background: #fff; border-bottom-color: var(--blue); }
+nav.scroll-nav .logo-wrap img { width: 150px; }
+nav.scroll-nav .nav-wrap { padding-top: 20px; padding-bottom: 10px; border-bottom-color: transparent; }
 
 
 header { position: relative; height: 100vh; min-height: 400px; max-height: 640px; background: url('../img/pattern-wall-01.png') no-repeat center center / cover; padding-top: 140px; }
@@ -89,15 +93,35 @@ header .background-text { position: absolute; top: 0; left: 0; height: 100%; max
 .home-service-list li svg { position: absolute; left: calc(var(--bs-gutter-x) * 0.5); top: 0; width: 25px; height: 25px; }
 .home-service-list li svg path { fill: var(--blue); }
 
+.services { display: flex; justify-content: center; max-width: 960px; margin-left: auto; margin-right: auto; }
+.services .item { font-family: 'Poppins'; width: 50%; padding: 25px 0; }
+.services .item.best-choice { padding: 0; }
+.services .item .service-card { border: 1px solid #DBDBDB; border-radius: 5px; height: 100%; }
+.services .item.best-choice .service-card { border-color: var(--blue); box-shadow: 0 2px 30px rgb(18 183 227 / 20%); transition: box-shadow 0.3s; }
+.services .item.best-choice .service-card:hover { box-shadow: 0 2px 40px rgb(18 183 227 / 50%); }
+.services .item .card-header { background: #DBDBDB; color: var(--blue); padding: 0.5rem; }
+.services .item.best-choice .card-header { background: var(--blue); color: #fff; }
+.services .item .card-header h4 { text-align: center; margin-bottom: 0; font-size: 1.5rem; }
+.services .item .card-content { padding: 30px 20px 50px; display: flex; flex-direction: column; align-items: center; }
+.services .item .service-desc { text-align: center; font-size: 1.5rem; line-height: 1.2; }
+.services .item .price-wrap { margin-bottom: 25px; }
+.services .item .price { color: var(--blue); font-size: 3rem; font-weight: 600; display: flex; justify-content: center; }
+.services .item .price small { font-size: 50%; margin-right: 0.25rem; }
+.services .item .price-sub { display: block; color: var(--blue); text-align: center; font-size: 1.125rem; font-weight: 600; }
+.services .item ul.item-usps { padding: 0; margin: 0; list-style: none; margin-bottom: 2rem; }
+.services .item ul.item-usps li { display: flex; align-items: center; font-weight: 600; margin-bottom: 0.5rem; }
+.services .item ul.item-usps li svg { margin-right: 0.5rem; }
+
 .subfooter { background: url('../img/pattern-wall-01.png') no-repeat center center / cover; }
 .subfooter .container-small { display: flex; justify-content: space-between; align-items: center; }
 
 footer { background: #2F2827; color: #fff; font-family: 'Poppins'; }
 footer .footer-content { border-top: 1px solid #fff; border-bottom: 1px solid #fff; padding-top: 75px; padding-bottom: 75px; }
-footer h2 { color: #fff; margin-bottom: 0; font-weight: 700; }
+footer h2 { color: #fff; margin-bottom: 0; font-weight: 700; font-size: 2.75rem; }
 footer p { color: #fff; font-family: 'Poppins'; }
 footer p svg { height: 1rem; }
 footer p svg path { fill: #fff; }
+footer ul.footer-menu { list-style: none; padding: 0; }
 footer a { color: #fff; text-decoration: none; }
 footer a:hover { text-decoration: underline; color: #fff; }
 footer .endpage { display: flex; justify-content: space-between; padding: 1rem 0; font-size: 1.125rem; }
