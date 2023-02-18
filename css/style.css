@@ -22,7 +22,7 @@ p { font-family: 'Roboto'; color: var(--grey); line-height: 1.8; }
 a { color: var(--blue); }
 a:hover { color: #109ABF; }
 
-blockquote { font-size: 2rem; font-family: 'Poppins'; font-weight: 200; text-align: center; }
+blockquote { font-size: 2rem; font-family: 'Poppins'; font-weight: 200; text-align: center; margin: 1.5rem; }
 blockquote strong { font-weight: 600; }
 
 .btn-primary { background: var(--black); color: #fff; }
@@ -96,6 +96,7 @@ main { scroll-margin-top: 150px; }
 .tab-content .tab.active { display: block; }
 
 .usp-big {  }
+.usp-big .item { display: flex; justify-content: center; }
 .usp-big .content { width: 80%; height: 100%; display: flex; flex-direction: column; }
 .usp-big .content .content-top { margin-bottom: 15px; }
 .usp-big .content .content-top .img-wrap { display: flex; justify-content: center; margin-bottom: 25px; }
@@ -179,6 +180,8 @@ footer .endpage ul li:last-child::after { display: none; }
 
     header { max-height: 350px; min-height: 225px; }
     header .background-text { font-size: 5rem; }
+
+    blockquote { font-size: 1.75rem; }
 }
 
 @media only screen and (max-width: 991px) {
@@ -195,11 +198,16 @@ footer .endpage ul li:last-child::after { display: none; }
     .usp-big .content .content-top .img-wrap { justify-content: flex-start; margin-bottom: 15px; }
     .usp-big .content h3 { text-align: left; }
     .usp-big .item { margin-bottom: 2rem; }
+    
+    .illustration-wrap { padding-right: 0; margin-bottom: 50px; height: auto; }
+
+    blockquote { font-size: 1.5rem; margin: 0.75em; }
 }
 
 @media only screen and (max-width: 767px) {
     h1 { font-size: 1.75rem; }
     h2 { font-size: 1.875rem; }
+    h3 { font-size: 1.125rem; }
     h2.title-small { font-size: 1.25rem; }
 
     [role="doc-subtitle"] { font-size: 1rem; }
@@ -214,6 +222,8 @@ footer .endpage ul li:last-child::after { display: none; }
 
     .usp-big .content { width: auto; }
     .usp-big .content h3 { height: auto; }
+
+    blockquote { font-size: 1.25rem; }
 }
 
 @media only screen and (max-width: 575px) {
@@ -223,9 +233,12 @@ footer .endpage ul li:last-child::after { display: none; }
     header .background-text { font-size: 3.5rem; }
 
     .usp-big .item { margin-bottom: 1rem; }
-    .usp-big .content .content-top { margin-bottom: 0; }
+    .usp-big .content .content-top { margin-bottom: 0; display: flex; align-items: center; }
+    .usp-big .content .content-top img { margin-right: 20px; width: 50px; }
 }
 
 @media only screen and (max-width: 479px) {
     header .background-text { font-size: 3rem; }
+
+    .home-service-list li { margin-bottom: 15px; }
 }

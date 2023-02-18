@@ -49,17 +49,16 @@
 }
 
 @media only screen and (max-width: 991px) {
-    /* .container { max-width: 720px; } */
-    .container-small { max-width: 540px; }
+    .container-small { max-width: 720px; }
 }
 
 @media only screen and (max-width: 767px) {
-    /* .container { max-width: 540px; } */
+    .container-small { max-width: 540px; }
     .btn { font-size: 0.875rem; padding: 0.75rem 1rem; }
 }
 
 @media only screen and (max-width: 575px) {
-    /* .container { max-width: 100%; } */
+    .container-small { max-width: 100%; }
 
     .mbot-100 { margin-bottom: 50px; }
     .mtop-100 { margin-top: 50px; }
