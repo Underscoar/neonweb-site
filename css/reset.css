@@ -28,7 +28,8 @@ h4,
 h5,
 h6,
 p,
-ul { margin-top: 0; }
+ul,
+menu { margin-top: 0; }
 
 input,
 button,

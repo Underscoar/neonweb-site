@@ -39,13 +39,19 @@
                         <img src="img/neonweb-logo-outlines-blue.svg" alt="" width="250" height="90">
                     </a>
 
-                    <ul class="nav-items">
+                    <menu class="nav-items">
                         <li><a href="/">Home</a></li>
                         <li><a href="/">Over Neonweb</a></li>
                         <li><a href="/">Diensten</a></li>
                         <li><a href="/">Websites</a></li>
                         <li><a href="/">Contact</a></li>
-                    </ul>
+                    </menu>
+
+                    <button class="menu-toggle" aria-label="Menu openen en sluiten">
+                      <span class="hamburger-line" aria-hidden></span>
+                      <span class="hamburger-line" aria-hidden></span>
+                      <span class="hamburger-line" aria-hidden></span>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -135,7 +141,7 @@
 
             <section class="mbot-75">
                 <div class="container">
-                    <div class="center-title mbot-50">
+                    <div class="center-title">
                         <h2>Webdesign en development</h2>
                         <p>Neonweb Studio maakt gebruik van de modernste technieken op het gebied van design en development, zodat websites goed scoren in Google, super snel geoptimaliseerd zijn en een optimale gebruikerservaring bieden.</p>
                     </div>
@@ -178,7 +184,7 @@
                 </div>
             </section>
 
-            <section class="mbot-100">
+            <section class="section_service-list">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -236,7 +242,7 @@
 
             <section class="mbot-75">
                 <div class="container">
-                    <div class="center-title mbot-50">
+                    <div class="center-title">
                         <h2>Diensten</h2>
                         <p>Neonweb biedt het ontwerpen en bouwen van moderne commerciële websites met een focus op prestaties en SEO.</p>
                     </div>
@@ -436,22 +442,22 @@
                             </p>
                         </div>
                         <div class="col-lg-3 col-sm-6">
-                          <ul class="footer-menu">
+                          <menu class="footer-menu">
                             <li><a href="#">Over ons</a></li>
                             <li><a href="#">Diensten</a></li>
                             <li><a href="#">Websites</a></li>
                             <li><a href="#">Contact</a></li>
-                          </ul>
+                          </menu>
                         </div>
                     </div>
                 </div>
                 <div class="endpage">
                     <div class="endpage-left">
-                        <ul>
+                        <menu>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Algemene voorwaarden</a></li>
                             <li><a href="#">Sitemap</a></li>
-                        </ul>
+                        </menu>
                     </div>
                     <div class="endpage-right">
                         &copy; <span id="current-year"></span> Neonweb Studio
@@ -459,6 +465,10 @@
                 </div>
             </div>
         </footer>
+
+        <div class="mobile-menu">
+
+        </div>
 
         <script src="js/main.js"></script>
     </body>
