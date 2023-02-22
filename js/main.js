@@ -1,5 +1,7 @@
 'use strict';
 
+const body = document.querySelector('body');
+
 window.addEventListener("scroll", checkScrollPos, { passive: true });
 
 function checkScrollPos() {
@@ -44,3 +46,49 @@ document.getElementById('current-year').innerHTML = new Date().getFullYear();
 function scrollToMain() {
     document.querySelector('#main').scrollIntoView();
 }
+
+document.querySelector('.menu-toggle').addEventListener('click', openMenu)
+document.querySelector('.close-btn').addEventListener('click', closeMenu)
+
+function openMenu() {
+    document.querySelector('.mobile-menu').style.display='block';
+    body.style.paddingRight = getScrollbarWidth() + 'px';
+    body.classList.add('modal-open');
+    setTimeout(function() {
+        document.querySelector('.mobile-menu').classList.add('active');
+    }, 5);
+}
+function closeMenu() {
+    document.querySelector('.mobile-menu').classList.remove('active');
+    
+    setTimeout(function() {
+        body.classList.remove('modal-open');
+        body.style.paddingRight = '0';
+        document.querySelector('.mobile-menu').style.display='none';
+    }, 300);
+}
+
+function getScrollbarWidth() {
+    return window.innerWidth - document.documentElement.clientWidth;
+}
+
+
+document.addEventListener("keydown", (e) => {
+    if (body.classList.contains('modal-open')) {
+        if (e.key == 'Escape') {
+            closeMenu();
+        }
+    }
+});
+
+
+if ( ! window.matchMedia('(prefers-reduced-motion: reduce)').matches ) {
+    AOS.init({
+      duration: 700,
+      once: true,
+    });
+  } else {
+    AOS.init({
+      disable: true,  
+    });
+  }
