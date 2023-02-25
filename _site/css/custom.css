@@ -96,5 +96,5 @@
 }
 
 @media only screen and (max-width: 479px) {
-
+    .btn { font-size: 0.75rem; }
 }

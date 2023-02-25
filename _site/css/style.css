@@ -57,7 +57,7 @@ nav .logo-wrap img { transition: width 0.3s; }
 nav menu.nav-items { display: flex; list-style: none; padding-left: 0; margin-bottom: 0; font-family: 'Poppins'; font-weight: 700; }
 nav menu.nav-items li { margin-left: 1rem; }
 nav menu.nav-items li:first-child { margin-left: 0; }
-nav menu.nav-items a { color: var(--black); text-decoration: none; font-size: 1.25rem; padding: 0.5em; }
+nav menu.nav-items a { color: var(--black); text-decoration: none; font-size: 1.25rem; padding: 0.5em; transition: color 0.3s; }
 nav menu.nav-items a[aria-current] { color: var(--blue) }
 nav menu.nav-items a:hover { text-decoration: underline; }
 nav.scroll-nav { background: #fff; border-bottom-color: var(--blue); box-shadow: 0 2px 20px rgb(18 183 227 / 30%); }
@@ -126,7 +126,7 @@ main { scroll-margin-top: 150px; overflow: hidden; }
 .usp-big .content h3 { text-align: center; height: 2.8em; }
 
 .section_service-list { margin-bottom: 5.5rem; }
-.vertical-center { height: 100%; display: flex; flex-direction: column; justify-content: center; }
+.vertical-center { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .illustration-wrap { padding-right: 50px; }
 .home-service-list {--bs-gutter-x: 2rem; display: flex; flex-wrap: wrap; padding-left: 0; list-style-type: none; }
 .home-service-list h3 { color: var(--black); }
@@ -230,6 +230,8 @@ footer .endpage menu li:last-child::after { display: none; }
     .services .item .card-header h4 { font-size: 1.25rem; }
     .services .item .service-desc { font-size: 1.25rem; }
     .services .item .price { font-size: 2.5rem; }
+
+    .subfooter-blue { padding: 4rem 0; }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -246,6 +248,11 @@ footer .endpage menu li:last-child::after { display: none; }
     .services .item .card-header h4 { font-size: 1.125rem; }
     .services .item .service-desc { font-size: 1.125rem; }
     .services .item ul.item-usps li { font-size: 0.875rem; }
+
+    .blue-block-quote { padding: 2rem 1.25rem; }
+    .blue-block-quote p { font-size: 1.25rem; }
+
+    .subfooter-blue { padding: 3rem 0; }
 
     footer .footer-content { padding-top: 50px; padding-bottom: 50px; }
     footer h2 { font-size: 2rem; }
@@ -269,6 +276,10 @@ footer .endpage menu li:last-child::after { display: none; }
 
     .section_service-list { margin-bottom: 3rem; }
     .illustration-wrap { padding-right: 0; margin-bottom: 3rem; height: auto; }
+    .illustration-wrap img { max-width: 500px; }
+
+    .text-quote .col-lg-6:nth-child(1) { margin-bottom: 5rem; }
+    .text-quote .quote-block-wrap { margin-bottom: 3rem; }
 
     blockquote { font-size: 1.5rem; margin: 0.75em; }
 
@@ -337,6 +348,9 @@ footer .endpage menu li:last-child::after { display: none; }
     .section_service-list { margin-bottom: 2rem; }
     .home-service-list { --bs-gutter-x: 1.5rem; padding-top: 1rem; }
 
+    .text-quote .col-lg-6:nth-child(1) { margin-bottom: 2rem; }
+    .text-quote .quote-block-wrap { margin-bottom: 1.5rem; }
+
     footer .footer-content menu a { text-decoration: underline; }
     footer .footer-content menu a:hover { text-decoration: none; opacity: 0.8; }
 
@@ -346,9 +360,32 @@ footer .endpage menu li:last-child::after { display: none; }
 }
 
 @media only screen and (max-width: 479px) {
+    body { font-size: 0.875rem; }
+    h1 { font-size: 1.25rem; }
+    h2 { font-size: 1.25rem; }
+    h2.title-small { font-size: 1.125rem; }
+    h3 { font-size: 1rem; }
+    p { font-size: 0.875rem; }
+
+    blockquote { font-size: 1.125rem; }
+
     header .background-text { font-size: 3rem; }
+
+    .showcase-img { padding-left: 10%; padding-right: 10%; }
+    .showcase-img .blob-wall { left: calc(10% - 1.25rem); }
+
+    .services .item .card-header h4 { font-size: 1rem; }
+    .services .item .service-desc { font-size: 1rem; }
+    .services .item .price { font-size: 2rem; }
+    .services .item .price-sub { font-size: 1rem; }
+    .services .item ul.item-usps li { font-size: 0.75rem; }
 
     .home-service-list li { margin-bottom: 0.5rem; }
 
+    .blue-block-quote { padding: 1.25rem 1rem; }
+    .blue-block-quote p { font-size: 1rem; }
+
     .subfooter .container-small { flex-direction: column; align-items: flex-start; }
+
+    footer h2 { font-size: 2rem; }
 }

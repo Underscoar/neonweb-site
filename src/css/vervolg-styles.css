@@ -1,0 +1,3 @@
+nav menu.nav-items a { color: #fff; }
+nav.scroll-nav menu.nav-items a { color: var(--black); }
+nav.scroll-nav menu.nav-items a[aria-current] { color: var(--blue); }
