@@ -45,7 +45,7 @@
 
                     <menu class="nav-items">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/over-neonweb">Over Neonweb</a></li>
+                        <li><a href="/over-neonweb" >Over Neonweb</a></li>
                         <li><a href="/">Diensten</a></li>
                         <li><a href="/">Websites</a></li>
                         <li><a href="/">Contact</a></li>
@@ -101,7 +101,18 @@
                     <div class="showcase-img">
                         <div class="blob-wall"></div>
                         <div class="img-wrap">
-                            <img src="/img/P1060385.webp" width="800" height="1067" alt="Arne Reijntjes" title="Arne Reijntjes">
+                            <!-- <img src="/img/P1060385.webp" width="800" height="1067" alt="" title="Arne Reijntjes"> -->
+                            <picture class="cs-picture">
+        <source type="image/webp" srcset="/img/P1060385-200w.webp 200w, /img/P1060385-400w.webp 400w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px">
+  <source type="image/jpeg" srcset="/img/P1060385-200w.jpeg 200w, /img/P1060385-400w.jpeg 400w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px">
+        <img
+          src="/img/P1060385-200w.jpeg"
+          width="400"
+          height="533"
+          alt="Arne Reijntjes"
+          loading="lazy"
+          decoding="async">
+      </picture>
                             <div class="blob-content blue-wall">
                                 <span class="year">3+</span>
                                 <span>jaar ervaring</span>
@@ -271,26 +282,18 @@
                             </div>
 
                             <ul class="item-usps">
-                                <li>
-                                <div class="check-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
-                                </div>
-                                Geen kosten vooraf</li>
-                                <li>
-                                <div class="check-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
-                                </div>
-                                Google Analytics</li>
-                                <li>
-                                <div class="check-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
-                                </div>
-                                Inclusief hosting</li>
-                                <li>
-                                <div class="check-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
-                                </div>
-                                24/7 support</li>
+                                <li> <div class="check-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
+</div> Geen kosten vooraf</li>
+                                <li> <div class="check-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
+</div> Google Analytics</li>
+                                <li> <div class="check-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
+</div> Inclusief hosting</li>
+                                <li> <div class="check-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
+</div> 24/7 support</li>
                             </ul>
 
                             <a href="#" class="btn btn-secondary">Neem contact op</a>
@@ -313,21 +316,15 @@
                             </div>
 
                             <ul class="item-usps">
-                                <li>
-                                <div class="check-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
-                                </div>
-                                Website op maat</li>
-                                <li>
-                                <div class="check-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
-                                </div>
-                                Inclusief hosting</li>
-                                <li>
-                                <div class="check-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
-                                </div>
-                                24/7 support</li>
+                                <li> <div class="check-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
+</div> Website op maat</li>
+                                <li> <div class="check-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
+</div> Inclusief hosting</li>
+                                <li> <div class="check-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" /> </svg>
+</div> 24/7 support</li>
                             </ul>
 
                             <a href="#" class="btn btn-secondary">Neem contact op</a>
