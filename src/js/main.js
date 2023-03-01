@@ -12,21 +12,24 @@ function checkScrollPos() {
         document.querySelector('nav').classList.remove('scroll-nav');
     }
 
-    const footerRect = document.querySelector('footer').getBoundingClientRect();
-    const footerTop = footerRect.top;
-    const clientHeight = document.documentElement.clientHeight;
-    if (footerTop < clientHeight) {
-        document.querySelector('.contact-text').innerHTML = 'vasb@arbajrofghqvb.ay'.replace(/[a-zA-Z]/g, function (c) { return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26); });
-        document.querySelector('.contact-text').href = 'mailto:' + 'vasb@arbajrofghqvb.ay'.replace(/[a-zA-Z]/g, function (c) { return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26); });
-        document.querySelector('.contact-text').classList.remove('d-none');
-        document.querySelector('.contact-svg').classList.add('d-none');
-    }
-    else {
-        document.querySelector('.contact-text').innerHTML = 'Mailen naar Neonweb Studio';
-        document.querySelector('.contact-text').href = '#';
-        document.querySelector('.contact-text').classList.add('d-none');
-        document.querySelector('.contact-svg').classList.remove('d-none');
-    }
+    document.querySelectorAll('.contact-wrap').forEach((item, i) => {
+      const elRect = item.getBoundingClientRect();
+      const elTop = elRect.top;
+      const clientHeight = document.documentElement.clientHeight;
+
+      if (elTop < clientHeight) {
+          item.querySelector('.contact-text').innerHTML = 'vasb@arbajrofghqvb.ay'.replace(/[a-zA-Z]/g, function (c) { return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26); });
+          item.querySelector('.contact-text').href = 'mailto:' + 'vasb@arbajrofghqvb.ay'.replace(/[a-zA-Z]/g, function (c) { return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26); });
+          item.querySelector('.contact-text').classList.remove('d-none');
+          item.querySelector('.contact-svg').classList.add('d-none');
+      }
+      else {
+          item.querySelector('.contact-text').innerHTML = 'Mailen naar Neonweb Studio';
+          item.querySelector('.contact-text').href = '#';
+          item.querySelector('.contact-text').classList.add('d-none');
+          item.querySelector('.contact-svg').classList.remove('d-none');
+      }
+    });
 }
 
 checkScrollPos();
@@ -60,7 +63,7 @@ function openMenu() {
 }
 function closeMenu() {
     document.querySelector('.mobile-menu').classList.remove('active');
-    
+
     setTimeout(function() {
         body.classList.remove('modal-open');
         body.style.paddingRight = '0';
@@ -89,6 +92,6 @@ if ( ! window.matchMedia('(prefers-reduced-motion: reduce)').matches ) {
     });
   } else {
     AOS.init({
-      disable: true,  
+      disable: true,
     });
   }

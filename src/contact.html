@@ -1,0 +1,77 @@
+---
+    layout: "base.html"
+    vervolgpagina: true
+
+    canonical: "https://neonwebstudio.nl/contact/"
+    title: "Diensten - Neonweb Studio"
+    description: "Neonweb Studio maakt moderne top presterende websites en levert uitstekende service, voor maar €150 per maand!"
+---
+
+<div class="banner mbot-75">
+    <div class="img-wrap">
+      <img src="/img/kari-shea-1SAnrIxw5OY-unsplash-2.webp"> <!-- ALT ENZO -->
+    </div>
+    <div class="container">
+      <div class="title-wrap">
+        <h1>Contact</h1>
+      </div>
+    </div>
+</div>
+
+<main id="main">
+  <section class="mbot-100">
+      <div class="container">
+          <div class="row mbot-50">
+            <div class="col-lg-6">
+                <span role="doc-subtitle">Stuur een berichtje!</span>
+                <h2>Neem contact op met Neonweb Studio</h2>
+                <p>Stuur gerust een mailtje of vul het contactformulier in. We streven ernaar zo snel mogelijk contact op te nemen.</p>
+            </div>
+          </div>
+          <div class="row contact-row">
+            <div class="col-lg-6">
+              <h3>Bedrijfsgegevens</h3>
+              <p>
+                Neonweb Studio<br>
+                Geldersebaan 32b,<br>
+                5931 JN Tegelen
+              </p>
+              <p>
+                {% include "./_includes/emailaddress.html" %}
+              </p>
+              <p>
+                KvK: 123456
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <h3>Stuur een bericht</h3>
+              <form class="contact-form" action="/" method="post">
+                <div class="form-group">
+                  <input type="text" name="naam" placeholder="Naam / Bedrijfsnaam*" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="E-mailadres*" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="telefoon" placeholder="Telefoonnummer"> <!-- klopt dit? -->
+                </div>
+                <div class="form-group">
+                  <textarea name="bericht" placeholder="Bericht..."></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" name="button" class="btn btn-secondary">Versturen</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="subfooter-blue blue-wall">
+    <div class="container">
+      <span role="doc-subtitle">Een mooie samenwerking begint met een berichtje.</span>
+      <h2>Vraag vrijblijvend een offerte aan!</h2>
+      <a href="#" class="btn btn-tertiary" title="Contact opnemen met Neonweb Studio">Contact</a>
+    </div>
+  </section>
+</main>
