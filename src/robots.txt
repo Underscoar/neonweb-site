@@ -1,0 +1,4 @@
+Sitemap: https://www.neonwebstudio.nl/sitemap.xml
+
+User-agent: *
+Disallow:
