@@ -1,5 +1,6 @@
 const Image = require('@11ty/eleventy-img');
 const path = require('path');
+const purgeCssPlugin = require("eleventy-plugin-purgecss");
 
 // allows the use of {% image... %} to create responsive, optimised images
 // CHANGE DEFAULT MEDIA QUERIES AND WIDTHS
@@ -53,6 +54,11 @@ module.exports = function(eleventyConfig) {
 
     // allows the {% image %} shortcode to be used for optimised iamges (in webp if possible)
     eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
+
+    eleventyConfig.addPlugin(purgeCssPlugin, {
+      config: "./purgecss.config.js",
+      quiet: false,
+    });
 
     return {
         dir: {
