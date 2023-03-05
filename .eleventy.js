@@ -51,6 +51,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/img');
     eleventyConfig.addPassthroughCopy('./src/favicon');
     eleventyConfig.addPassthroughCopy('./src/js');
+    eleventyConfig.addPassthroughCopy('./src/pdf');
 
     // allows the {% image %} shortcode to be used for optimised iamges (in webp if possible)
     eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
