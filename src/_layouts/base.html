@@ -10,6 +10,40 @@
     })(window,document,'script','dataLayer','GTM-WF83XGC');</script>
     <!-- End Google Tag Manager -->#}
 
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.neonwebstudio.nl",
+            "logo": "https://www.neonwebstudio.nl/img/neonweb-logo-outlines-blue.svg",
+            "email": "info@neonwebstudio.nl",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Tegelen",
+                "streetAddress": "Geldersebaan 32b",
+                "postalCode": "5931 JN"
+            }
+        }
+    </script>
+
+    {% if '/contact' in page.url %}
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Tegelen",
+                "streetAddress": "Geldersebaan 32b",
+                "postalCode": "5931 JN"
+
+            },
+            "description": "Een webbureau dat websites maakt voor lokale ondernemers en kleine bedrijven",
+            "name": "Neonweb Studio"
+            }
+        </script>
+    {% endif %}
+
     <meta charset="utf-8">
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}">
