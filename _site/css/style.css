@@ -60,6 +60,7 @@ nav .logo-wrap { margin-right: 25px; }
 nav .logo-wrap img { transition: width 0.3s; }
 nav menu.nav-items { display: flex; list-style: none; padding-left: 0; margin-bottom: 0; font-family: 'Poppins'; font-weight: 700; }
 nav menu.nav-items li { margin-left: 1rem; }
+nav menu.nav-items li.hidden-in-nav { display: none; }
 nav menu.nav-items li:first-child { margin-left: 0; }
 nav menu.nav-items a { color: var(--black); text-decoration: none; font-size: 1.25rem; padding: 0.5em; transition: color 0.3s; }
 nav menu.nav-items a[aria-current] { color: var(--blue) }
@@ -239,6 +240,7 @@ footer .endpage menu li:last-child::after { display: none; }
 .mobile-menu .logo-wrap { display: flex; justify-content: center; margin-bottom: 2rem; padding: 0 0.75rem; }
 .mobile-menu menu { list-style: none; padding: 0; margin: 0 auto; max-width: 720px; }
 .mobile-menu menu li {  }
+.mobile-menu menu li.hidden-in-nav { display: none; }
 .mobile-menu menu li a { font-family: 'Poppins'; font-weight: 600; font-size: 2rem; line-height: 1; padding: 0.75rem 1rem; color: #fff; text-decoration: none; display: block; transition: transform 0.3s, opacity 0.3s; }
 .mobile-menu menu li a:hover { transform: translateX(0.25rem); opacity: 0.6; }
 .mobile-menu.active { display: block; }
